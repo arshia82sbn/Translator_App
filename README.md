@@ -2,7 +2,7 @@
 
 Welcome to **TranslatorPro**, your all-in-one desktop translation application built with CustomTkinter, Transformers and Deep Translator! This repository also includes a handy script for downloading SentencePiece and model files from Hugging Face. Dive in to see all the features, installation steps, and usage examples.
 
-!["Demo Application"](screenshot.png)
+!["Demo Application"]("screenshot.png")
 
 ---
 
