@@ -1,4 +1,3 @@
-```md
 # 🎉 TranslatorPro & HF Model Downloader 📦
 
 Welcome to **TranslatorPro**, your all-in-one desktop translation application built with CustomTkinter, Transformers and Deep Translator! This repository also includes a handy script for downloading SentencePiece and model files from Hugging Face. Dive in to see all the features, installation steps, and usage examples.
@@ -44,7 +43,7 @@ Welcome to **TranslatorPro**, your all-in-one desktop translation application bu
    ```bash
    git clone https://github.com/yourusername/TranslatorPro.git
    cd TranslatorPro
-````
+   ```
 
 2. **Create a virtual environment** (recommended):
 
