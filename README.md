@@ -112,7 +112,6 @@ Contributions, issues and feature requests are welcome! Feel free to fork the pr
 - [Deep Translator](https://github.com/nidhaloff/deep-translator)
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
 
-Happy translating! 🌍✨
 
 ```
 ```
