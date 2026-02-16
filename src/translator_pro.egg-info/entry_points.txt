@@ -1,0 +1,2 @@
+[console_scripts]
+translator-pro = translator_pro.main:main
