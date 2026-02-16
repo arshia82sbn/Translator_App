@@ -1,3 +1,24 @@
+Metadata-Version: 2.4
+Name: translator_pro
+Version: 0.1.0
+Summary: A desktop translation application with online/offline support and speech features.
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: customtkinter>=5.2.0
+Requires-Dist: CTkMessagebox>=1.6.0
+Requires-Dist: deep-translator>=1.11.4
+Requires-Dist: transformers>=4.41.0
+Requires-Dist: Pillow>=10.3.0
+Requires-Dist: speechrecognition==3.10.3
+Requires-Dist: pyttsx3>=2.90
+Requires-Dist: googletrans==4.0.0rc1
+Requires-Dist: huggingface-hub
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
 # 🎉 TranslatorPro
 
 A clean, professional Python package for translation with support for online (Google) and offline (Transformers) translation, speech recognition, and text-to-speech.

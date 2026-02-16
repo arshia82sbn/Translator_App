@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "translator_pro"
+version = "0.1.0"
+description = "A desktop translation application with online/offline support and speech features."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+dependencies = [
+    "customtkinter>=5.2.0",
+    "CTkMessagebox>=1.6.0",
+    "deep-translator>=1.11.4",
+    "transformers>=4.41.0",
+    "Pillow>=10.3.0",
+    "speechrecognition==3.10.3",
+    "pyttsx3>=2.90",
+    "googletrans==4.0.0rc1",
+    "huggingface-hub",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "mypy",
+    "ruff",
+]
+
+[project.scripts]
+translator-pro = "translator_pro.main:main"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "D"]
+ignore = ["D100", "D104"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true
