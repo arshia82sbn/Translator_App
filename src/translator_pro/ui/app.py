@@ -1,14 +1,21 @@
 import os
 import threading
-from typing import List, Dict, Any
+from typing import Any, List
 
-from customtkinter import (
-    CTk, CTkFrame, CTkComboBox, CTkLabel, CTkTextbox, CTkButton, CTkImage,
-    set_appearance_mode, set_default_color_theme
-)
-from CTkMessagebox import CTkMessagebox
-from PIL import Image
 import speech_recognition as sr
+from CTkMessagebox import CTkMessagebox
+from customtkinter import (
+    CTk,
+    CTkButton,
+    CTkComboBox,
+    CTkFrame,
+    CTkImage,
+    CTkLabel,
+    CTkTextbox,
+    set_appearance_mode,
+    set_default_color_theme,
+)
+from PIL import Image
 
 from translator_pro.api.facade import TranslatorFacade
 from translator_pro.models.languages import LANGUAGES
@@ -169,7 +176,8 @@ class TranslatorApp(CTk):  # type: ignore[misc]
         except sr.UnknownValueError:
             self.after(0, lambda: CTkMessagebox(title="Error", message="No speech detected!", icon="warning"))
         except Exception as e:
-            self.after(0, lambda: CTkMessagebox(title="Error", message=f"Error: {str(e)}", icon="cancel"))
+            error_msg = str(e)
+            self.after(0, lambda: CTkMessagebox(title="Error", message=f"Error: {error_msg}", icon="cancel"))
 
     def _speak(self) -> None:
         """Trigger TTS via the facade."""

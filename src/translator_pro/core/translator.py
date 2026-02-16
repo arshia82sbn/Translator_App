@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
+
 from translator_pro.models.translation import TranslationResult
+
 
 class TranslatorStrategy(ABC):
     """Abstract base class for translation strategies."""

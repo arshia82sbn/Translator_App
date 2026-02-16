@@ -1,7 +1,8 @@
-import pytest
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
+
 from translator_pro.infra.online_translator import OnlineTranslator
 from translator_pro.models.translation import TranslationResult
+
 
 def test_online_translator_translate():
     """Test that OnlineTranslator calls deep_translator correctly."""

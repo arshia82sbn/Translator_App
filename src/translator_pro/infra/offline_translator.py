@@ -1,7 +1,9 @@
+
 from transformers import pipeline
+
 from translator_pro.core.translator import TranslatorStrategy
 from translator_pro.models.translation import TranslationResult
-from typing import Any
+
 
 class OfflineTranslator(TranslatorStrategy):
     """Implementation of translation using Hugging Face Transformers."""

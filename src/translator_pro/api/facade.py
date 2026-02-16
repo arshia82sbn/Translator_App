@@ -1,10 +1,12 @@
 from typing import Optional
-from translator_pro.core.translator import TranslatorStrategy
-from translator_pro.infra.online_translator import OnlineTranslator
-from translator_pro.infra.offline_translator import OfflineTranslator
+
 from translator_pro.core.speech import SpeechService
-from translator_pro.models.translation import TranslationResult
+from translator_pro.core.translator import TranslatorStrategy
+from translator_pro.infra.offline_translator import OfflineTranslator
+from translator_pro.infra.online_translator import OnlineTranslator
 from translator_pro.models.languages import get_language_code
+from translator_pro.models.translation import TranslationResult
+
 
 class TranslatorFacade:
     """Facade class providing a simple API for the Translator application."""
@@ -23,7 +25,9 @@ class TranslatorFacade:
             self._offline_translator = OfflineTranslator()
         return self._offline_translator
 
-    def translate(self, text: str, source_lang_name: str, target_lang_name: str, use_online: bool = True) -> TranslationResult:
+    def translate(
+        self, text: str, source_lang_name: str, target_lang_name: str, use_online: bool = True
+    ) -> TranslationResult:
         """Translates text between languages.
 
         Args:

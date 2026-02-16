@@ -1,5 +1,6 @@
-import googletrans
 from typing import Dict
+
+import googletrans
 
 # Provide a clean interface to languages
 LANGUAGES: Dict[str, str] = googletrans.LANGUAGES

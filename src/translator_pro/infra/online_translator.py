@@ -1,6 +1,8 @@
 from deep_translator import GoogleTranslator
+
 from translator_pro.core.translator import TranslatorStrategy
 from translator_pro.models.translation import TranslationResult
+
 
 class OnlineTranslator(TranslatorStrategy):
     """Implementation of translation using Google Translate via deep-translator."""

@@ -1,7 +1,8 @@
-import pytest
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
+
 from translator_pro.api.facade import TranslatorFacade
 from translator_pro.models.translation import TranslationResult
+
 
 @patch('translator_pro.api.facade.OnlineTranslator')
 @patch('translator_pro.api.facade.SpeechService')
